@@ -42,7 +42,7 @@ import streamlit as st
 st.number_input('Distância entre a casa do cliente e lugar de transação: ', key='distCasa')
 st.number_input('Distância entre a transação atual com a última transação: ', key='distTransacoes')
 st.number_input('Proporção da transação do preço de compra para o preço de compra mediano: ', key='precoMedio')
-st.number_input'A transação é com o mesmo varejista? ', key='varejista')
+st.number_input('A transação é com o mesmo varejista? ', key='varejista')
 st.number_input('A transação  é feita com cartão de crédito? ', key='cartaoCredito')
 st.number_input('A transação é feita com cartão PIN de cartão de crédito? ', key='pin')
 st.number_input(' A transação é online?', key='online')
