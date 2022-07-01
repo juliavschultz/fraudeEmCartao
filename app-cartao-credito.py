@@ -16,7 +16,7 @@ from sklearn.tree import DecisionTreeClassifier
 
 
 #--------LENDO ARQUIVO
-arquivo = pd.read_csv('card_transdata.csv', sep=',')
+arquivo = pd.read_csv('amostraCartao.csv', sep=',')
 #classificação de transação legítima==0 e fraudulenta==1
 nomesClassesED=['LEGÍTIMO', 'FRAUDE']
 
