@@ -22,9 +22,11 @@ nomesClassesED=['LEGÍTIMO', 'FRAUDE']
 
 #--------SEPARANDO COLUNAS
 colunas = arquivo.columns.to_list()
-nomesColunas = colunas [1:7]
+nomesColunas = colunas [:7]
+colunasclasses = colunas[7]
+
 dataset_features = arquivo[nomesColunas]
-dataset_classes = arquivo['fraud']
+dataset_classes = arquivo[colunasclasses]
 
 #--------DIVISÃO DOS DADOS DE TREINO E TESTE
 feature_treino,feature_teste,classes_treino,classes_teste = train_test_split(dataset_features,
